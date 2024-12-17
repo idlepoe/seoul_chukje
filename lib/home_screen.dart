@@ -52,9 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
             leading: Image.network(_list[index].MAIN_IMG),
             title: Text(_list[index].TITLE,
                 maxLines: 1, overflow: TextOverflow.ellipsis),
-            subtitle: Text(_list[index].STRTDATE.replaceAll("00:00:00.0", "") +
-                "~" +
-                _list[index].END_DATE.replaceAll("00:00:00.0", "")),
+            subtitle: Text("${_list[index].STRTDATE.replaceAll("00:00:00.0", "")}~${_list[index].END_DATE.replaceAll("00:00:00.0", "")}"),
             trailing: Chip(
                 label: Text(_list[index].IS_FREE,
                     style: TextStyle(
@@ -72,6 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   void initState() {
+    super.initState();
     getFullList();
   }
 

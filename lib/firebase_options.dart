@@ -22,8 +22,6 @@ class DefaultFirebaseOptions {
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
-      case TargetPlatform.iOS:
-        return ios;
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -47,29 +45,21 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAsz6SosXncN20Aeor0pGAHDEmzhqmR-2c',
-    appId: '1:212365129831:web:bd22dea578e7963d0bfcc2',
-    messagingSenderId: '212365129831',
-    projectId: 'seoul-chukje',
-    authDomain: 'seoul-chukje.firebaseapp.com',
-    storageBucket: 'seoul-chukje.appspot.com',
-    measurementId: 'G-C78QPBN077',
+    apiKey: 'AIzaSyAkJ3IEAkY5h9VV0nX-QY-MXcAaom8WbpI',
+    appId: '1:489576501543:web:6ffdc5b6e036c0bf3f1902',
+    messagingSenderId: '489576501543',
+    projectId: 'seoul-event',
+    authDomain: 'seoul-event.firebaseapp.com',
+    storageBucket: 'seoul-event.firebasestorage.app',
+    measurementId: 'G-R0S6DL0Y6S',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBmG2J5PGoOfT2iHVN5ExfmK6TBEg-0W-w',
-    appId: '1:212365129831:android:3628bcf1cbc353430bfcc2',
-    messagingSenderId: '212365129831',
-    projectId: 'seoul-chukje',
-    storageBucket: 'seoul-chukje.appspot.com',
+    apiKey: 'AIzaSyBGkegxDvsf7d7LJf92BIKpbLXgBZQs8hs',
+    appId: '1:489576501543:android:9811bf1578c167713f1902',
+    messagingSenderId: '489576501543',
+    projectId: 'seoul-event',
+    storageBucket: 'seoul-event.firebasestorage.app',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC0pwHTZqfLKejL7wicTiWvnOPUNPyFDSg',
-    appId: '1:212365129831:ios:c69c5773cc34593d0bfcc2',
-    messagingSenderId: '212365129831',
-    projectId: 'seoul-chukje',
-    storageBucket: 'seoul-chukje.appspot.com',
-    iosBundleId: 'com.example.sagomap',
-  );
 }

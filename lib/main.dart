@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:http_proxy/http_proxy.dart';
 import 'package:logger/logger.dart';
 import 'package:sagomap/home_screen.dart';
 
@@ -13,8 +12,6 @@ Logger logger = Logger();
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  HttpProxy httpProxy = await HttpProxy.createHttpProxy();
-  HttpOverrides.global=httpProxy;
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

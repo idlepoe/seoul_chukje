@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sagomap/models/cultural_event_info_detail.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class DetailScreen extends StatelessWidget {
   final CulturalEventInfoDetail detail;
@@ -55,7 +54,7 @@ class DetailScreen extends StatelessWidget {
                 leading: Text("링크"),
                 title: InkWell(
                     onTap: () {
-                      launchUrl(Uri.parse(detail.ORG_LINK));
+                      // launchUrl(Uri.parse(detail.ORG_LINK));
                     },
                     child: Text(
                       detail.ORG_LINK,

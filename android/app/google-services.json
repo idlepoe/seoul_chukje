@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "212365129831",
-    "project_id": "seoul-chukje",
-    "storage_bucket": "seoul-chukje.appspot.com"
+    "project_number": "489576501543",
+    "project_id": "seoul-event",
+    "storage_bucket": "seoul-event.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:212365129831:android:3628bcf1cbc353430bfcc2",
+        "mobilesdk_app_id": "1:489576501543:android:9811bf1578c167713f1902",
         "android_client_info": {
-          "package_name": "com.example.sagomap"
+          "package_name": "com.example.seoul_chukje"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBmG2J5PGoOfT2iHVN5ExfmK6TBEg-0W-w"
+          "current_key": "AIzaSyBGkegxDvsf7d7LJf92BIKpbLXgBZQs8hs"
         }
       ],
       "services": {
